@@ -2,20 +2,13 @@
 from datetime import datetime
 import io
 
-# Third party imports
-from IPython.display import display, HTML
 import matplotlib.pyplot as plt
 import matplotlib
 import numpy as np
 from obspy.geodetics.base import gps2dist_azimuth
 from obspy.imaging.beachball import beachball
 from obspy.imaging.beachball import beach
-
-# Local imports
-from libcomcat.dataframes import (get_detail_data_frame, get_dyfi_data_frame,
-                                  get_history_data_frame, get_magnitude_data_frame,
-                                  get_pager_data_frame, get_phase_dataframe,
-                                  get_summary_data_frame)
+from libcomcat.dataframes import get_detail_data_frame
 from libcomcat.search import search, get_event_by_id
 
 
