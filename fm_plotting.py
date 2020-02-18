@@ -18,7 +18,7 @@ for feature in features:
     symbol = QgsSymbol.defaultSymbol(layer.geometryType())
     
     # configure a symbol layer
-    symbol_layer = QgsSvgMarkerSymbolLayer('/your/path/here/Earthquakes/data/bbs/svg/%s' % feature['id'] +'.svg', size=feature['magnitude']*2)
+    symbol_layer = QgsSvgMarkerSymbolLayer('/Users/your/path/here/Earthquakes/data/bbs/svg/%s' % feature['id'] +'.svg', size=feature['magnitude']*2)
 
     # replace default symbol layer with the configured one
     if symbol_layer is not None:
